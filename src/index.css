@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-appear {
+  animation: appear 0.3s ease-out forwards;
+}
+
+textarea {
+  min-height: 44px;
+  max-height: 200px;
+  resize: vertical; /* kullanıcıya yalnızca dikeyde yeniden boyutlandırma imkanı verir */
+}
+
+textarea::-webkit-scrollbar {
+  width: 8px;
+}
+
+textarea::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: rgba(139, 69, 19, 0.3);
+  border-radius: 4px;
+}
+
+div::-webkit-scrollbar {
+  width: 8px;
+}
+
+div::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+div::-webkit-scrollbar-thumb {
+  background-color: rgba(139, 69, 19, 0.3);
+  border-radius: 4px;
+}
+
+/* Metinler için daha okunabilir stil düzenlemeleri */
+.message-text {
+  white-space: pre-line; /* Metnin satır sonlarını korur */
+  word-wrap: break-word; /* Uzun kelimeleri satır sonunda kırar */
+  line-height: 1.5; /* Satır aralığını artırarak okuma kolaylığı sağlar */
+  font-size: 1rem; /* Metin boyutunu belirler */
+  color: inherit; /* Yazı rengi, parent'tan gelir */
+}
+
+/* Numaralı ve madde işaretli listeler için düzenlemeler */
+.message-text ol {
+  margin-left: 20px;
+  padding-left: 20px; /* Listeyi biraz daha sola yaslar */
+  list-style-type: decimal; /* Numaralı liste kullanımı */
+}
+
+.message-text li {
+  margin-bottom: 10px; /* Liste elemanları arasındaki boşluğu artırır */
+}
+
+/* Kalın ve italik metin için stil */
+.message-text strong {
+  font-weight: bold;
+}
+
+.message-text em {
+  font-style: italic;
+}
+
+/* Bot mesajlarını daha iyi vurgulamak için ek stil */
+.message-text.bot-message {
+  background-color: rgba(100, 100, 100, 0.1); /* Bot mesajları için arka plan */
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.message-text.user-message {
+  background-color: rgba(0, 122, 255, 0.1); /* Kullanıcı mesajları için farklı renk */
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
