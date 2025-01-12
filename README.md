@@ -13,5 +13,5 @@ To run the application locally, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/atomic-habits-chatbot.git
+   git clone https://github.com/suzunn/atomic-habits-chatbot.git
    cd atomic-habits-chatbot
