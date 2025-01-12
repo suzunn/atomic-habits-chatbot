@@ -42,7 +42,7 @@ To run the application locally, follow these steps:
    ```
 
    - `VITE_API_URL`: Add the URL of your API here.
-   - `VITE_API_KEY`: Add your API key here. You can use the Atomic Habits API or your own API.
+   - `VITE_API_KEY`: Add your API key here. You can use your own API.
 
 4. **Run the Application**:
 
